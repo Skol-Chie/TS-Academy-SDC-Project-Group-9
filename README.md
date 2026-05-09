@@ -119,6 +119,8 @@ npm install
 npm run dev
 ```
 
+Use Git Bash, VS Code terminal, Command Prompt, or any normal shell for the commands above. If PowerShell blocks `npm` because of execution policy, switch the terminal profile to Git Bash or Command Prompt and run the same `npm run dev` command.
+
 
 ## Live Deployment
 
