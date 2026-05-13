@@ -1,0 +1,136 @@
+/* 1. Main Container: White background and centered alignment */
+.contact_container {
+  background-color: #ffffff; /* Explicitly white as requested */
+  padding: 5rem 10%; /* Generous padding to match mockup spacing */
+  max-width: 1400px;
+  margin: 0 auto;
+  font-family: 'Inter', sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start; /* Forces H2, P, and Form to start at the same left line */
+  text-align: left;
+}
+
+/* 2. Typography Alignment: H2 and P must share the same start line */
+.contact_container h2 {
+  color: #1e40af; 
+  font-size: 2.2rem;
+  margin: 0 0 0.5rem 0; /* Zero left margin ensures perfect alignment */
+  font-weight: 700;
+}
+
+.contact_container p {
+  color: #4b5563;
+  font-size: 1.1rem;
+  margin: 0 0 3rem 0;
+  max-width: 700px; /* Prevents text from stretching too far */
+  line-height: 1.6;
+}
+
+/* 3. The Form Grid */
+.contact_form {
+  width: 100%; /* Ensures the form wrapper fills the container width */
+}
+
+.contact_form_grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* Exact side-by-side columns */
+  column-gap: 50px; /* Space between columns from mockup */
+  row-gap: 2rem;
+  width: 100%;
+}
+
+/* 4. Form Group: Vertical alignment of Label and Input */
+.form_group {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start; /* Ensures label and input start at the exact same pixel on the left */
+  gap: 8px; 
+}
+
+.form_group label {
+  font-weight: 600;
+  color: #111827;
+  font-size: 0.95rem;
+  display: flex;
+  align-items: center;
+}
+
+/* Red Asterisk */
+.form_group label::after {
+  content: "*";
+  color: #dc2626;
+  margin-left: 2px;
+}
+
+/* 5. Input Fields Styling */
+.form_group input, 
+.form_group textarea {
+  width: 100%;
+  padding: 0.85rem 1rem;
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+  font-size: 1rem;
+  background-color: #ffffff;
+  color: #111827;
+  transition: border-color 0.2s;
+  
+}
+
+.form_group input::placeholder,
+.form_group textarea::placeholder {
+  color: #9ca3af;
+}
+
+.form_group textarea {
+  min-height: 50px;
+  resize: none;
+}
+
+/* Character Count */
+.char_count {
+  font-size: 0.8rem;
+  color: #6b7280;
+  margin-top: 4px;
+}
+
+/* 6. Button Styling */
+.contact_form_grid button {
+  grid-column: 1; /* Aligns under the first column's start line */
+  background-color: #1e40af;
+  color: white;
+  padding: 0.9rem 3rem;
+  border: none;
+  border-radius: 8px;
+  font-weight: 600;
+  font-size: 1rem;
+  cursor: pointer;
+  width: fit-content;
+  margin-top: 1rem;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.status_message {
+    padding: 1rem;
+    border: 1px solid #d1fae5;
+    border-radius: 6px;
+    margin-bottom: 1rem;
+    background-color: #f0fdf4;
+    color: #1e40af;
+    width: 100%;
+    text-align: center;
+    font-weight: 600;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+  .contact_form_grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .contact_container {
+    padding: 3rem 5%;
+  }
+}
