@@ -2,3 +2,116 @@
   background-color: #f0f0f0;
   padding: 2rem;
 }
+
+* {
+
+  margin: 0;
+
+  padding: 0;
+
+  box-sizing: border-box;
+
+}
+
+body {
+
+  background-color: #f3f3f3;
+
+  font-family: Arial, Helvetica, sans-serif;
+
+}
+
+.table-container {
+
+  width: 90%;
+
+  max-width: 1200px;
+
+  margin: 50px auto;
+
+}
+
+.text-content {
+
+  color: #1d4ed8;
+
+  margin-bottom: 10px;
+
+}
+
+.description {
+
+  color: #444;
+
+  line-height: 1.7;
+
+  margin-bottom: 30px;
+
+  max-width: 850px;
+
+}
+
+.text-left{
+  text-align: left;
+}
+
+.planet-Data {
+
+  margin-bottom: 20px;
+
+  color: #1e293b;
+}
+
+table {
+
+  width: 100%;
+
+  border-collapse: collapse;
+
+  overflow: hidden;
+
+  border-radius: 10px;
+
+}
+
+thead {
+
+  background-color: #1d4ed8;
+
+  color: white;
+
+}
+
+th,
+
+td {
+
+  padding: 18px;
+
+  text-align: center;
+
+  border: 1px solid #e5e7eb;
+
+}
+
+tbody tr {
+
+  background-color: #eef2ff;
+
+}
+
+.category {
+
+  background-color: #c7d2fe;
+
+  font-weight: bold;
+
+}
+
+.subcategory {
+
+  background-color: #dbeafe;
+
+  font-weight: bold;
+
+}
