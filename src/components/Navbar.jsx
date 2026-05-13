@@ -4,21 +4,15 @@ const Navbar = () => {
   return (
     <nav className="navbar">
       <div className="navbar-container">
-        <h1 className="navbar-logo">TS Academy</h1>
-        <ul className="navbar-menu">
-          <li className="navbar-item">
-            <a href="#home" className="navbar-link">Home</a>
-          </li>
-          <li className="navbar-item">
-            <a href="#about" className="navbar-link">About</a>
-          </li>
-          <li className="navbar-item">
-            <a href="#services" className="navbar-link">Services</a>
-          </li>
-          <li className="navbar-item">
-            <a href="#contact" className="navbar-link">Contact</a>
-          </li>
-        </ul>
+        <a href="#home" className="navbar-logo" aria-label="Planet Creative World home">
+          <span className="navbar-logo__planet" aria-hidden="true">
+            <span className="navbar-logo__orbit"></span>
+          </span>
+          <span className="navbar-logo__text">
+            <span className="navbar-logo__name">planet</span>
+            <span className="navbar-logo__tagline">creative world</span>
+          </span>
+        </a>
       </div>
     </nav>
   );
