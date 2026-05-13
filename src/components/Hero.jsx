@@ -15,7 +15,7 @@ const Hero = () => {
           <a className="button button--primary" href="#planets">
             Explore the Data
           </a>
-          <a className="button button--secondary" href="#contact">
+          <a className="button button--secondary" href="#contactForm">
             Contact Us
           </a>
         </div>
