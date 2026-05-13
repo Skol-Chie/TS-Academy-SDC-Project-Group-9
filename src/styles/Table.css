@@ -51,15 +51,22 @@ body {
 
 }
 
-.text-left{
+h2 {
+  text-align: left;
+  color: #0047AB;
+}
+
+p {
   text-align: left;
 }
 
-.planet-Data {
+
+h3 {
 
   margin-bottom: 20px;
 
   color: #1e293b;
+  text-align: left;
 }
 
 table {

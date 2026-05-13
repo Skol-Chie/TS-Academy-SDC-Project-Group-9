@@ -4,9 +4,9 @@ const PlanetTable = () => {
   return (
     <div className="table-container">
 
-      <h3 className='text-content, text-left'>Planetary Facts at a Glance</h3>
+      <h2 >Planetary Facts at a Glance</h2>
 
-      <p className="description ,text-left">
+      <p className="description">
 
         Below is a comparative table of major planets in our solar system.
 
@@ -16,7 +16,7 @@ const PlanetTable = () => {
 
       </p>
 
-      <h3 className='text-left, planet-Data'>
+      <h3>
 
         Data about the planets of our solar system
 
