@@ -1,11 +1,39 @@
 import 'react';
+import '../styles/Footer.css';
 
 const Footer = () => {
   return (
-    <footer style={{ backgroundColor: '#f8f9fa', padding: '20px', textAlign: 'center' }}>
-      <p>&copy; 2026 Your Company. All rights reserved.</p>
-      <div>
-        <a href="/privacy">Privacy Policy</a> | <a href="/terms">Terms of Service</a>
+    <footer className="footer">
+      <div className="footer__inner">
+        <div className="footer__about">
+          <h2>About</h2>
+          <p>
+            Group 9 is Benjamin, Ayo, Cletus, Chidimma, and Daniel. We built
+            this planet data explorer as part of the TS Academy software
+            engineering capstone.
+          </p>
+        </div>
+        <div className="footer__bottom">
+          <div className="footer__credit">
+            <p>&copy;2026 Design by Amaka & Ifeoma A.</p>
+            <p>
+              Built by{" "}
+              <a
+                href="https://github.com/Skol-Chie/TS-Academy-SDC-Project-Group-9"
+                target="_blank"
+                rel="noreferrer"
+              >
+                Group 9
+              </a>
+              . All rights reserved
+            </p>
+          </div>
+          <div className="footer__links">
+            <a href="https://tsacademyonline.com/" target="_blank" rel="noreferrer">
+              TSAcademy
+            </a>
+          </div>
+        </div>
       </div>
     </footer>
   );
