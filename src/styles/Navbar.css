@@ -1,8 +1,123 @@
 .navbar {
-  background-color: #0b214f;
-  padding: 1rem 2rem;
+  z-index: 20;
+  background: var(--space);
 }
 
-.logo {
-  color: white;
+.navbar-container {
+  width: min(100% - 2rem, var(--max-width));
+  min-height: 78px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.navbar-logo {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.55rem;
+  color: var(--text-inverse);
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+.navbar-logo__planet {
+  width: 2.9rem;
+  height: 2.1rem;
+  display: inline-block;
+  position: relative;
+}
+
+.navbar-logo__planet::before {
+  content: "";
+  position: absolute;
+  left: 0.55rem;
+  top: 0.18rem;
+  width: 1.5rem;
+  height: 1.5rem;
+  background: #ffffff;
+  border-radius: 999px;
+}
+
+.navbar-logo__planet::after {
+  content: "";
+  position: absolute;
+  right: 0.28rem;
+  top: 0;
+  width: 0.24rem;
+  height: 0.24rem;
+  border-radius: 999px;
+  background: #ffffff;
+}
+
+.navbar-logo__orbit {
+  position: absolute;
+  left: 0.08rem;
+  top: 0.5rem;
+  width: 2.65rem;
+  height: 0.78rem;
+  border: 0.22rem solid #ffffff;
+  border-left-width: 0.3rem;
+  border-right-width: 0.3rem;
+  border-radius: 999px;
+  transform: rotate(-25deg);
+  transform-origin: center;
+}
+
+.navbar-logo__text {
+  display: grid;
+  gap: 0.02rem;
+  line-height: 1;
+}
+
+.navbar-logo__name {
+  color: #ffffff;
+  font-size: 1.85rem;
+  font-weight: 800;
+  letter-spacing: -0.03em;
+}
+
+.navbar-logo__tagline {
+  color: rgba(255, 255, 255, 0.72);
+  font-size: 0.72rem;
+  letter-spacing: 0.22em;
+  text-transform: lowercase;
+}
+
+@media (max-width: 560px) {
+  .navbar-container {
+    min-height: 64px;
+  }
+
+  .navbar-logo__planet {
+    width: 2.2rem;
+    height: 1.6rem;
+  }
+
+  .navbar-logo__planet::before {
+    left: 0.42rem;
+    width: 1.15rem;
+    height: 1.15rem;
+  }
+
+  .navbar-logo__planet::after {
+    width: 0.18rem;
+    height: 0.18rem;
+  }
+
+  .navbar-logo__orbit {
+    width: 2rem;
+    height: 0.6rem;
+    border-width: 0.16rem;
+    border-left-width: 0.22rem;
+    border-right-width: 0.22rem;
+  }
+
+  .navbar-logo__name {
+    font-size: 1.35rem;
+  }
+
+  .navbar-logo__tagline {
+    font-size: 0.54rem;
+  }
 }
