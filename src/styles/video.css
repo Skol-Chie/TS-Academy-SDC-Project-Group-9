@@ -1,4 +1,176 @@
+* {
+
+  margin: 0;
+
+  padding: 0;
+
+  box-sizing: border-box;
+
+}
+
+.content {
+
+  width: 100%;
+
+  height: 100%;
+
+  object-fit: cover;
+
+}
+
 .video-section {
-  background-color: #f0f0f0;
-  padding: 2rem;
+
+  margin-top: 30px;
+
+  width: 100%;
+
+  min-height: 100vh;
+
+  background-color: #f3f3f3;
+
+  display: flex;
+
+  justify-content: center;
+
+  align-items: center;
+  border-radius: 40px;
+
+  gap: 100px;
+
+  padding: 60px 80px;
+
+}
+
+/* LEFT SIDE */
+
+.video-card {
+
+  position: relative;
+
+  width: 480px;
+
+  height: 486px;
+
+  border-radius: 40px ;
+  
+
+  overflow: hidden;
+
+}
+
+.video-card source{
+
+  width: 100%;
+
+  height: 200%;
+  border-radius: 20px;
+
+  
+
+}
+
+/* PLAY BUTTON */
+
+.play-button {
+
+  position: absolute;
+
+  top: 50%;
+
+  left: 50%;
+
+  transform: translate(-50%, -50%);
+
+  width: 80px;
+
+  height: 80px;
+
+  
+
+  border-radius: 80%;
+
+  display: flex;
+
+  justify-content: center;
+
+  align-items: center;
+
+  font-size: 56px;
+
+  color: #f1f2f5;
+
+  cursor: pointer;
+  
+  border: none;
+  
+
+}
+
+/* RIGHT SIDE */
+
+.text-content {
+
+  max-width: 500px;
+
+  text-align: center;
+
+}
+
+.text-content h2 {
+
+  font-size: 28px;
+
+  color: #1e4fbf;
+
+    
+
+  
+
+  text-align: center;
+
+  
+  
+
+
+
+}
+
+
+
+.text-content h3 {
+
+  font-size: 28px;
+
+  color: #1e4fbf;
+  margin-bottom: 5px;
+
+  
+  ;
+
+  
+  text-align: center;
+  
+  
+
+}
+
+.text-content p {
+
+  font-size: 18px;
+
+  color: #333;
+
+  line-height: 1.8;
+  margin-top: 0px;
+
+  
+
+}
+
+.text-content span {
+
+  color: #0d5ea6;
+
+  font-weight: 700;
+
 }
