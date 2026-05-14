@@ -1,67 +1,43 @@
-import React from 'react';
+import "../styles/video.css";
 
-const VideoSection = () => {
+import video from "../assets/video/videoImage.mp4";
+
+export default function VideoSection() {
   return (
-    <section className="video-section" style={{ 
-      padding: '40px 10%', 
-      backgroundColor: '#ffffff', 
-      display: 'flex', 
-      flexDirection: 'row', 
-      alignItems: 'center', 
-      gap: '30px',
-      justifyContent: 'center',
-      flexWrap: 'wrap' 
-    }}>
-      
-      {/* Reduced Video Size */}
-      <div style={{ flex: '0 1 380px' }}> 
-        <div style={{ 
-          borderRadius: '20px', 
-          overflow: 'hidden', 
-          boxShadow: '0 8px 25px rgba(0, 0, 0, 0.1)' 
-        }}>
-          <video 
-            autoPlay 
-            loop 
-            muted 
-            playsInline
-            controls
-            style={{ width: '100%', display: 'block' }}
-          >
-            <source 
-               src="https://vjs.zencdn.net/v/oceans.mp4" 
-              type="video/mp4" 
-            />
-          </video>
+    <section className="video-section">
+      {/* Left Side */}
+      <div className="video-card">
+        <video  controls className="content">
+
+          <source src={video} type="video/mp4" />
+          your browser does not support the video tag.
+        </video>
+
+        <div className="play-button" onClick={() => {}}>
+          ▶
         </div>
       </div>
 
-      {/* Reduced Text Size */}
-      <div style={{ flex: '0 1 400px' }}>
-        <h2 style={{ 
-          color: '#004aad', 
-          fontSize: '1.8rem', // Much smaller, compact heading
-          lineHeight: '1.2',
-          fontWeight: '700',
-          marginBottom: '12px',
-          textAlign: 'center'
-        }}>
-          How Planetary Data <br /> Helps Us Understand Space
-        </h2>
-        <p style={{ 
-          fontSize: '0.95rem', // Smaller paragraph text
-          color: '#555',
-          lineHeight: '1.5',
-          margin: '0'
+      {/* Right Side */}
+      <div className="text-content">
+        
+        
+           <h2>How Planetary Data Helps Us</h2>
           
-        }}>
-          Planetary science goes beyond images. Comparing <strong>mass</strong>, <strong>diameter</strong>, 
-          <strong> gravity</strong>, and <strong>density</strong>, we gain insight into how planets form.
+          <h3>Understand Space</h3>
+        
+        
+
+        <p>
+          Planetary science goes beyond images. Comparing
+          <span> mass</span>,
+          <span> diameter</span>,
+          <span> gravity</span>, and
+          <span> density</span>, we gain insight into how planets form,
+          behave, and interact within the solar system.
         </p>
       </div>
-
     </section>
   );
-};
+}
 
-export default VideoSection;
