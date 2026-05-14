@@ -1,0 +1,8 @@
+{
+  "rewrites": [
+    {
+      "source": "/api/contact-proxy",
+      "destination": "https://whitebricks.com/tsacademy.php"
+    }
+  ]
+}

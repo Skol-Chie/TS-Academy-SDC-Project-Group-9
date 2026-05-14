@@ -32,7 +32,7 @@ const Contact = () => {
 
       try{
         // the api fetch call
-        let response = await fetch("https://corsproxy.io/?https://whitebricks.com/tsacademy.php", {
+        let response = await fetch("/api/contact-proxy", {
             method: "POST",
             body: data
         });
