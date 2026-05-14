@@ -6,10 +6,7 @@
   gap: clamp(2rem, 6vw, 5rem);
   width: 100%;
   padding: clamp(4rem, 8vw, 6.5rem) max(1rem, calc((100vw - var(--max-width)) / 2));
-  background:
-    radial-gradient(circle at 76% 42%, rgba(65, 148, 255, 0.34), transparent 22rem),
-    radial-gradient(circle at 14% 18%, rgba(66, 142, 255, 0.22), transparent 18rem),
-    linear-gradient(135deg, var(--space-deep), var(--space));
+ background: #051540;
   color: var(--text-inverse);
   overflow: hidden;
   position: relative;
