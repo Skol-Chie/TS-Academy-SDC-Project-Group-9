@@ -118,9 +118,9 @@
 
 .text-content h2 {
 
-  font-size: 28px;
+  font-size: 30px;
 
-  color: #1e4fbf;
+  color: #0047AB;
 
     
 
@@ -139,9 +139,9 @@
 
 .text-content h3 {
 
-  font-size: 28px;
+  font-size: 30px;
 
-  color: #1e4fbf;
+  color: #0047AB;
   margin-bottom: 5px;
 
   
@@ -173,4 +173,49 @@
 
   font-weight: 700;
 
+}
+
+/* Base styles remain unchanged */
+
+/* Mobile view adjustments */
+@media (max-width: 768px) {
+  .video-section {
+    flex-direction: column;
+    gap: 30px;
+    padding: 20px;
+    border-radius: 20px;
+  }
+
+  .video-card {
+    width: 100%;
+    height: auto;
+    border-radius: 20px;
+  }
+
+  .video-card video {
+    width: 100%;
+    height: auto;
+    border-radius: 20px;
+  }
+
+  .play-button {
+    width: 60px;
+    height: 60px;
+    font-size: 40px;
+  }
+
+  .text-content {
+    max-width: 100%;
+    padding: 0 10px;
+  }
+
+  .text-content h2,
+  .text-content h3 {
+    font-size: 22px;
+  }
+
+  .text-content p {
+    font-size: 16px;
+    line-height: 1.6;
+  }
 }
